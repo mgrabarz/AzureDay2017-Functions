@@ -1,2 +1,2 @@
 # AzureDay2017-Functions
-Sample implmentation of Azure Function excercise.
+Sample implementation of Azure Function excercises.
