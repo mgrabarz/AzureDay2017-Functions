@@ -1,0 +1,19 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "path": "images/{name}",
+      "type": "blobTrigger",
+      "name": "inImage",
+      "direction": "in",
+      "connection": "azureBlobConnectionString"
+    },
+    {
+      "path": "thumbnails/{name}",
+      "type": "blob",
+      "name": "outThumbnail",
+      "direction": "out",
+      "connection": "azureBlobConnectionString"
+    }
+  ]
+}

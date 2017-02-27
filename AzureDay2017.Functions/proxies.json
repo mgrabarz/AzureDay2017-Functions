@@ -1,0 +1,22 @@
+{
+  "proxies": {
+    "Rewrite to A ver1": {
+      "matchCondition": {
+        "methods": [
+          "GET"
+        ],
+        "route": "/api/v1/a"
+      },
+      "backendUri": "https://%WEBSITE_HOSTNAME%/api/HelloWorldAV1?code=Lfvchv/hHwNnlNYsvpPkjcU5NPa7ucmRPU8LoulRZAN53EmdB2Ilaw=="
+    },
+    "Rewrite to B ver1": {
+      "matchCondition": {
+        "methods": [
+          "GET"
+        ],
+        "route": "/api/v1/b"
+      },
+      "backendUri": "https://%WEBSITE_HOSTNAME%/api/HelloWorldBV1?code=ye19BfOJuCmRYyt6uUgBFY2vz6/4tQzG6gGTpTzA4Pfe6e0QNsO3nQ=="
+    }
+  }
+}
