@@ -1,0 +1,27 @@
+﻿{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "function",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "type": "twilioSms",
+      "name": "messages",
+      "accountSid": "TwilioAccountSid",
+      "authToken": "TwilioAccountToken",
+      "from": "+48732230100",
+      "direction": "out"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ]
+}
