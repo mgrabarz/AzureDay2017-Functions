@@ -2,6 +2,7 @@
 #r "Twilio.Api"
 
 using System;
+using System.Configuration;
 using System.Net;
 using Newtonsoft.Json;
 using Twilio;
@@ -19,7 +20,8 @@ public static async Task<HttpResponseMessage> Run(HttpRequestMessage req, IAsync
         var sms = new SMSMessage
         {
             Body = smsDetails.Body,
-            To = smsDetails.To
+            To = smsDetails.To,
+            From = ConfigurationManager.AppSettings["TwilioAccountPhoneNumber"]
         };
         messages.AddAsync(sms);
         return req.CreateResponse(HttpStatusCode.OK, "OK");

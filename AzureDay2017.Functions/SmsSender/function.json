@@ -15,7 +15,6 @@
       "name": "messages",
       "accountSid": "TwilioAccountSid",
       "authToken": "TwilioAccountToken",
-      "from": "+48732230100",
       "direction": "out"
     },
     {
